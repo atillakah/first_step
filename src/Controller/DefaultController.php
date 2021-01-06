@@ -39,7 +39,7 @@ class DefaultController extends AbstractController
     /**
      * @Route("/mentions-legales", name="mentions-legales")
      */
-    public function mentionslegales(){
+    public function mentionsLegales(){
 
         return $this->render('default/mentionslegales.html.twig');
     }
