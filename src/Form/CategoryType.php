@@ -13,7 +13,7 @@ class CategoryType extends AbstractType
     {
         $builder
             ->add('name')
-            ->add('enabled')
+            // here I deleted enabled no
         ;
     }
 
