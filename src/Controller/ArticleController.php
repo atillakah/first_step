@@ -95,4 +95,15 @@ class ArticleController extends AbstractController
 
         return $this->redirectToRoute('article_index');
     }
+     /**
+     * @Route("/{id}/changestatus", name="article_change_status", methods={"GET"})
+     */
+    public function changeStatus(Article $article): Response
+    {
+
+        $article->setPublished(!$article->getPublished());
+        $this->getDoctrine()->getManager()->flush();
+        return $this->redirectToRoute('article_index');
+
+    }
 }
