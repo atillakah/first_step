@@ -17,9 +17,9 @@ class ArticleType extends AbstractType
             ->add('title')
             ->add('content')
             ->add('cover')
-            ->add('published')
-            ->add('created_at')
-            ->add('updated_at')
+            // ->add('published')
+           // ->add('created_at')
+           // ->add('updated_at')
             ->add('category', EntityType::class, [
                 'class' => Category::class,
                 'choice_label' => 'name',
